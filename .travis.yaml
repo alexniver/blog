@@ -1,0 +1,27 @@
+sudo: false
+language: go
+git:
+    depth: 1
+
+install:
+    - uname -a
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - hugo version
+    - rm -rf blog
+    - ls
+    - pwd
+script:
+    - hugo
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: code
+    local_dir: public
+    repo: alexniver/blog
+    fqdn: 
+    target_branch: master
+    email: zhulin10541@gmail.com
+    name: alexniver
