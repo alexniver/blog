@@ -1,125 +1,32 @@
-baseurl = "https://alexniver.github.io/blog/"
-title = "alexniver"
+baseURL = "https://alexniver.github.io"
+languageCode = "zh-cmn-Hans"
+defaultContentLanguage = "zh"
+title = "alexniver's blog"
+theme = "dream"
 
-theme = "hugo-coder"
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。'
 
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
-canonifyurls = true
-
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+googleAnalytics = ""
 
 disqusShortname = "alexniver"
 
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
 [params]
-    author = "John Doe"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
-    avatarurl = "images/avatar.jpg"
-    footercontent = "Enter a text here."
+  author = "alexniver"
+  description = "alexniver's blog"
+  avatar = "/img/head.jpg"
+  motto = "你他娘的意大利炮呢？！"
+  
+  email = "zhulin10541@gmail.com"
+  github = "alexniver"
+  linkedin = "alexniver"
+  codepen = "alexniver"
+  stackoverflow = "1275503/alexniver"
 
-    dateformat = "January 2, 2006"
+  paginate = 4
+  siteStartYear = 2019
 
-    hideCredits = false
-    hideCopyright = false
-
-    # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://github.com/luizdepra/hugo-coder/tree/"
-
-    rtl = false
-
-    # Use inverted colors
-    inverted = false
-
-    # Custom CSS
-    custom_css = []
-
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/alexniver/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/alexniver/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/alexniver/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/alexniver/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@alexniver"
-
-
-[languages]
-    [languages.en]
-        languagename = "English"
-
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1
-        url = "/about/"
-
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2
-        url = "/posts/"
-
-        [[languages.en.menu.main]]
-        name = "Projects"
-        weight = 3
-        url = "/projects/"
-
-        [[languages.en.menu.main]]
-        name = "Contact me"
-        weight = 5
-        url = "/contact/"
-
-
-    [languages.zh-CN]
-        languagename = "中文"
-        title = "博客"
-
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
-            weight = 1
-            url = "/pt-br/about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "/pt-br/posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
-            weight = 3
-            url = "/pt-br/projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
-            weight = 5
-            url = "/pt-br/contact/"
+  favicon = "/favicon.ico"
