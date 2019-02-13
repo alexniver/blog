@@ -1,4 +1,4 @@
-baseurl = "https://alexniver.github.io/"
+baseurl = "https://alexniver.github.io/blog/"
 title = "alexniver"
 
 theme = "hugo-coder"
