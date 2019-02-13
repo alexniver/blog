@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Syntax Highlighting</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="
+
+Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in
+config.toml:
+pygmentsstyle = &#34;&lt;style&gt;&#34;
+For dark highlighter themes, you should rebuild capsule CSS with..."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Syntax Highlighting"/>
+  <meta itemprop="description"
+        content="
+
+Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in
+config.toml:
+pygmentsstyle = &#34;&lt;style&gt;&#34;
+For dark highlighter themes, you should rebuild capsule CSS with..."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Syntax Highlighting"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/syntax-highlighting/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="
+
+Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in
+config.toml:
+pygmentsstyle = &#34;&lt;style&gt;&#34;
+For dark highlighter themes, you should rebuild capsule CSS with..."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-02-08T16:40:02-05:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="code"/>
+  <meta property="article:tag" content="pygments"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Syntax Highlighting"/>
+  <meta name="twitter:description"
+        content="
+
+Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in
+config.toml:
+pygmentsstyle = &#34;&lt;style&gt;&#34;
+For dark highlighter themes, you should rebuild capsule CSS with..."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Syntax Highlighting</p>
+        <p class="subtitle">Feb 8, 2017</p>
+
+        
+
+        
+        <div class="content">
+          
+
+<p>Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in
+config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pygmentsstyle = &#34;&lt;style&gt;&#34;</code></pre></div>
+<p>For dark highlighter themes, you should rebuild capsule CSS with
+<code>build/extra/syntax.sass</code>. Uncomment it from the capsule.sass file and run
+<code>gulp</code>.</p>
+
+<p>Without that file, the background color will default to Bulma&rsquo;s light
+background-color, and light colored elements meant to be displayed against dark
+backgrounds from dark themes will be hard to read.</p>
+
+<p>Use <code>```</code> braces to add code blocks. To set a language-specific
+highlighter, add <code>```language</code> to the opening brace, e.g.:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">```html
+&lt;section id=&#34;main&#34;&gt;
+  &lt;div&gt;
+    &lt;h1 id=&#34;title&#34;&gt;Exercitation ullamco laboris&lt;/h1&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+```</code></pre></div>
+<p>Note that for the above to work, you also need to set in the config.toml file:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">PygmentsCodeFences = true</code></pre></div>
+<h2 id="examples">Examples</h2>
+
+<p>A gallery of available pygments styles is available
+<a href="http://blog.yjl.im/2015/08/pygments-styles-gallery.html">here</a>. Below are a
+few examples of available syntax highlighters, using the tango style.</p>
+
+<h3 id="c">C++</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;cmath&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">good_log_2</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">m</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+  <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#000">m</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
+    <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">&gt;&gt;</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span>
+  <span style="color:#000;font-weight:bold">}</span>
+  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">m</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">bad_log_2</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">inv_log_2</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">1.0</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">2.0</span><span style="color:#000;font-weight:bold">);</span>
+  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">((</span><span style="color:#204a87;font-weight:bold">double</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">inv_log_2</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">&lt;=</span><span style="color:#0000cf;font-weight:bold">1024</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">*=</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">bad_d</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">bad_log_2</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">bad</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span><span style="color:#000;font-weight:bold">)(</span><span style="color:#000">bad_d</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">good</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">good_log_2</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">cout</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">precision</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">17</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#000">std</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">cout</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#4e9a06">&#34; log2(&#34;</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#4e9a06">&#34;) = &#34;</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#000">good</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#4e9a06">&#34;; or &#34;</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#000">bad</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#4e9a06">&#34; from &#34;</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#000">bad_d</span><span style="color:#ce5c00;font-weight:bold">&lt;&lt;</span><span style="color:#4e9a06">&#34;)</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">;</span>
+  <span style="color:#000;font-weight:bold">}</span>
+  <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+<h3 id="html">HTML</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">section</span> <span style="color:#c4a000">id</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;main&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>
+  <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">div</span><span style="color:#000;font-weight:bold">&gt;</span>
+    <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">h1</span> <span style="color:#c4a000">id</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;title&#34;</span><span style="color:#000;font-weight:bold">&gt;</span>Exercitation ullamco laboris<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">h1</span><span style="color:#000;font-weight:bold">&gt;</span>
+    <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">p</span><span style="color:#000;font-weight:bold">&gt;</span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    <span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">p</span><span style="color:#000;font-weight:bold">&gt;</span>
+  <span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">div</span><span style="color:#000;font-weight:bold">&gt;</span>
+<span style="color:#000;font-weight:bold">&lt;/</span><span style="color:#204a87;font-weight:bold">section</span><span style="color:#000;font-weight:bold">&gt;</span></code></pre></div>
+<h3 id="javascript">Javascript</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">script</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">toCelsius</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">f</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#a40000">/9) * (f-32);</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">myFunction</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;demo&#34;</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">innerHTML</span><span style="color:#000;font-weight:bold">;</span> 
+    <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">txt</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">replace</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">/microsoft/i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;W3Schools&#34;</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;demo&#34;</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">innerHTML</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">txt</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#a40000">/script&gt;</span>
+</code></pre></div>
+<h3 id="php">PHP</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#8f5902;font-style:italic">&lt;?php</span>
+<span style="color:#000">$t</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">date</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;H&#34;</span><span style="color:#000;font-weight:bold">);</span>
+
+<span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">$t</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#4e9a06">&#34;20&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#4e9a06">&#34;Have a good day!&#34;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#4e9a06">&#34;Have a good night!&#34;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+<span style="color:#8f5902;font-style:italic">?&gt;</span>
+</code></pre></div>
+<h3 id="python">Python</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">csv</span>
+
+<span style="color:#8f5902;font-style:italic"># write stocks data as comma-separated values</span>
+<span style="color:#000">writer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">csv</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">writer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;stocks.csv&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;wb&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">buffering</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">writer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">writerows</span><span style="color:#000;font-weight:bold">([</span>
+    <span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;GOOG&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;Google, Inc.&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">505.24</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.47</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.09</span><span style="color:#000;font-weight:bold">),</span>
+    <span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;YHOO&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;Yahoo! Inc.&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">27.38</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.33</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">1.22</span><span style="color:#000;font-weight:bold">),</span>
+    <span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;CNET&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;CNET Networks, Inc.&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">8.62</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">0.13</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1.49</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000;font-weight:bold">])</span>
+
+<span style="color:#8f5902;font-style:italic"># read stocks data, print status messages</span>
+<span style="color:#000">stocks</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">csv</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">reader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;stocks.csv&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;rb&#39;</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">status_labels</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;down&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;unchanged&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;up&#39;</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">ticker</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">price</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">change</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">pct</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">stocks</span><span style="color:#000;font-weight:bold">:</span>
+    <span style="color:#000">status</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">status_labels</span><span style="color:#000;font-weight:bold">[</span><span style="color:#204a87">cmp</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">float</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">change</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#0000cf;font-weight:bold">0.0</span><span style="color:#000;font-weight:bold">)]</span>
+    <span style="color:#204a87;font-weight:bold">print</span> <span style="color:#4e9a06">&#39;</span><span style="color:#4e9a06">%s</span><span style="color:#4e9a06"> is </span><span style="color:#4e9a06">%s</span><span style="color:#4e9a06"> (</span><span style="color:#4e9a06">%s%%</span><span style="color:#4e9a06">)&#39;</span> <span style="color:#ce5c00;font-weight:bold">%</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">status</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">pct</span><span style="color:#000;font-weight:bold">)</span></code></pre></div>
+<h3 id="ruby">Ruby</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#8f5902;font-style:italic"># Simple for loop using a range.</span>
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#ce5c00;font-weight:bold">..</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#204a87">print</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34; &#34;</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87">print</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span>
+
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#ce5c00;font-weight:bold">...</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#204a87">print</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34; &#34;</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87">print</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span>
+
+<span style="color:#8f5902;font-style:italic"># Running through a list (which is what they do).</span>
+<span style="color:#000">items</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">[</span> <span style="color:#4e9a06">&#39;Mark&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;goobers&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">45</span> <span style="color:#ce5c00;font-weight:bold">]</span>
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">it</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">items</span>
+    <span style="color:#204a87">print</span> <span style="color:#000">it</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34; &#34;</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87">print</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span>
+
+<span style="color:#8f5902;font-style:italic"># Go through the legal subscript values of an array.</span>
+<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#ce5c00;font-weight:bold">...</span><span style="color:#000">items</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">length</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#204a87">print</span> <span style="color:#000">items</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#ce5c00;font-weight:bold">..</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">].</span><span style="color:#000">join</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34; &#34;</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span>
+<span style="color:#204a87;font-weight:bold">end</span></code></pre></div>
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/syntax">
+      <span class="tag">Syntax</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/code">
+      <span class="tag">Code</span>
+    </a>
+  </div>
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/pygments">
+      <span class="tag">Pygments</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/builtin-shortcodes/">
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-tablet">
+              Built-in Shortcodes
+            </span>
+            
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="#" disabled>
+            <span>Oldest</span>
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f&text=Syntax%20Highlighting">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f&title=Syntax%20Highlighting">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f&title=Syntax%20Highlighting">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f&title=Syntax%20Highlighting&caption=">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f&description=Syntax%20Highlighting">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fsyntax-highlighting%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

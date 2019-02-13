@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/categories/</link>
+    <description>Recent content in Categories on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    
+	<atom:link href="https://alexniver.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>https://alexniver.github.io/blog/categories/overview/</link>
+      <pubDate>Sat, 01 Jul 2017 10:58:38 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/categories/overview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://alexniver.github.io/blog/categories/shortcodes/</link>
+      <pubDate>Mon, 31 Jul 2017 12:50:20 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/categories/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>https://alexniver.github.io/blog/categories/syntax/</link>
+      <pubDate>Wed, 08 Feb 2017 16:40:02 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/categories/syntax/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Images on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/tags/images/</link>
+    <description>Recent content in Images on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Mon, 31 Jul 2017 12:50:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Figures</title>
+      <link>https://alexniver.github.io/blog/tutorials/figures/</link>
+      <pubDate>Mon, 31 Jul 2017 12:50:20 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/figures/</guid>
+      <description>Capsule provides three shortcodes for embedding images, responsive images, and groups of images with relevant metadata.
+img The {{&amp;lt; img &amp;gt;}} shortcode simply adds an img tag with the following parameters:
+ align: aligns the image and wrap text around (&amp;lsquo;right&amp;rsquo; or &amp;lsquo;left&amp;rsquo;) alt (or caption): set the alt text for the image class: adds CSS classes to the img tag link: wraps the img in anchor tags so that the image has a clickable link.</description>
+    </item>
+    
+    <item>
+      <title>Banners</title>
+      <link>https://alexniver.github.io/blog/tutorials/banners/</link>
+      <pubDate>Sun, 30 Jul 2017 22:13:57 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/banners/</guid>
+      <description>The {{&amp;lt; banner &amp;gt;}} and {{&amp;lt; banner-fluid &amp;gt;}} shortcodes use the Bulma hero class to display banners that can either fill the entire container width or the entire viewport width, respectively.
+Parameters:
+ title: the text to be displayed prominently in the center of the banner class: string of classes to add to banner subtitle: smaller text displayed under the title img: url to background image mode: how the image is used to fill the banner space (&amp;lsquo;stretch&amp;rsquo; or &amp;lsquo;repeat&amp;rsquo;)  Text to display in the body of the banner goes in between the {{&amp;lt; banner &amp;gt;}} tags.</description>
+    </item>
+    
+    <item>
+      <title>Built-in Shortcodes</title>
+      <link>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</link>
+      <pubDate>Mon, 08 May 2017 13:43:01 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</guid>
+      <description>&lt;p&gt;Hugo comes with several built-in shortcodes. Some examples of them are
+displayed below. For a full list of available shortcodes, go to &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;the Hugo
+website&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Installation and Overview</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="
+
+Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework
+and Font-Awesome icons.
+
+Installation
+
+To install Capsule, you can add it as a submodule in the themes/ directory, or
+you..."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Installation and Overview"/>
+  <meta itemprop="description"
+        content="
+
+Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework
+and Font-Awesome icons.
+
+Installation
+
+To install Capsule, you can add it as a submodule in the themes/ directory, or
+you..."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Installation and Overview"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/install-overview/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="
+
+Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework
+and Font-Awesome icons.
+
+Installation
+
+To install Capsule, you can add it as a submodule in the themes/ directory, or
+you..."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-07-01T10:58:38-04:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="install"/>
+  <meta property="article:tag" content="layout"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Installation and Overview"/>
+  <meta name="twitter:description"
+        content="
+
+Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework
+and Font-Awesome icons.
+
+Installation
+
+To install Capsule, you can add it as a submodule in the themes/ directory, or
+you..."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Installation and Overview</p>
+        <p class="subtitle">Jul 1, 2017</p>
+
+        
+
+        
+        <div class="content">
+          
+
+<p>Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework
+and Font-Awesome icons.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install Capsule, you can add it as a submodule in the <code>themes/</code> directory, or
+you copy the files manually.</p>
+
+<p>If you use Git to version your site, you can easily add Capsule as a submodule.
+From the base of your website repository, run:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/sudorook/capsule themes/capsule</code></pre></div>
+<p>If you would instead prefer to manually install the theme, copy over the
+contents of the <code>static/</code> directory to your site. Note that the CSS uses
+relative paths to find the fonts, so the directory names and hierarchy must be
+preserved.</p>
+
+<p>Once the files are downloaded and in place, build the Hugo site with the theme.
+You can either pass the <code>-t capsule</code> on the command line , or you edit this
+line into your config.toml file:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">theme = &#34;capsule&#34;</code></pre></div>
+<p>You also should add this line to the config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">canonifyURLs = true</code></pre></div>
+<p>This is to ensure that relative paths work properly should the root of the site
+be hosted in a subdirectory of the server (i.e. website.com/subdir/yoursite)
+rather than the root of the front-end (i.e. website.com/yoursite).</p>
+
+<h2 id="building">Building</h2>
+
+<p>To (re)build the CSS, you need to have npm and gulp installed. Clone the
+capsule repository and once in it run:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install</code></pre></div>
+<p>and then</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gulp</code></pre></div>
+<p>You can also enable/disable Sass components in <code>build/sass/capsule.sass</code>. You
+can select which modules in Bulma get compiled by (un)commenting lines in
+<code>build/sass/bulma/bulma.sass</code>, and you can tweak global variables used in
+generating the CSS in <code>build/sass/bulma/variables.sass</code>.</p>
+
+<p>If using using customized theme, you can maintain a fork repo and set the theme
+submodule to your fork, or you can simply make a symlink in the <code>themes/</code>
+directory of your site to your local repository.</p>
+
+<h2 id="configuration-options">Configuration options</h2>
+
+<p>Capsule is set up so that Hugo automatically generate several things based on
+options set in the config.toml file. Enabling or disabling them is a simple
+matter of editing values for each variable.</p>
+
+<h3 id="automatically-generate-navbar-menu">Automatically generate navbar menu</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">SectionPagesMenu = &#34;main&#34;</code></pre></div>
+<p>This will cause Hugo to create a menu in the top right of the navbar visible
+that shows each section on the site. (Sections are the directories within
+<code>contents/</code>.) The menu appears as a dropdown list for mobile views.</p>
+
+<p>It will also generate a section menu in the footer.</p>
+
+<h3 id="add-git-metadata-to-single-pages">Add git metadata to single pages</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">enableGitInfo = true
+
+[params]
+  repo = &#34;https://github.com/&lt;user&gt;/&lt;repo&gt;</code></pre></div>
+<p>This applies only to websites that are version controlled by git, with the
+repository hosted publicly online.</p>
+
+<p>With the above settings, Hugo will insert text at the bottom of each post (the
+single.html layout) showing the date of the last commit for that page that
+links to the specific commit in the online repository specified in the
+config.toml file. Below is an example.</p>
+
+<p class="heading">
+  Last edited:
+  <a href="https://sudorook/capsule/commit/376772833702c141a2095b90e085e2eea361ed09">
+    May 23, 2018
+  </a>
+</p>
+
+<p>In the config.toml, &lt;user&gt; and &lt;repo&gt; stand for the user name of your
+account and the repository name of the website, respectively. The example uses
+GitHub, but GitLab and any other site that follows the format of
+<code>&lt;siteurl&gt;/&lt;user&gt;/&lt;repo&gt;/commit/&lt;hash&gt;</code> will work, too.</p>
+
+<h3 id="link-to-online-accounts">Link to online accounts</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[social]
+  github = &#34;&lt;user&gt;&#34;
+  gitlab = &#34;&lt;user&gt;&#34;</code></pre></div>
+<p>Capsule is configured to automatically generate links to accounts named under
+[social] in the config.toml. The links appear as buttons in the bottom-right of
+the footer, opposite the search box.</p>
+
+<p>The icons on each button are Font Awesome icons. The names of the sites in
+under [social] in the config.toml file correspond to the Font Awesome icon
+names (i.e., github and fa-github).  Capsule will correctly generate links to
+your account for site with the account url format <code>&lt;siteurl&gt;/&lt;user&gt;</code> (i.e.,
+github.com/username). Any sites that don&rsquo;t follow that format will have to be
+hard-coded in the <code>layout/partials/footer.html</code> file.</p>
+
+<h3 id="set-favicon-logo-and-banner">Set favicon, logo, and banner</h3>
+
+<p>Capsule uses four images by default:</p>
+
+<ol>
+<li>favicon.ico - icon in browser tabs, etc.</li>
+<li>apple-touch-icon.png - icon in browser tabs, etc.</li>
+<li>logo.svg - shows up in top-left corner of the navbar beside the name of the
+website, except on the home page.</li>
+<li>banner.svg - the background image for the navbar-hero on the home page.</li>
+</ol>
+
+<p>By default, Capsule will look into the <code>img/</code> directory (assuming it exists) to
+find these images.</p>
+
+<p>To specify different paths or different file names, create a folder called
+<code>data/</code> at the base of your website directory. Inside this directory, create a
+file called data.toml. Fill it as follows:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[icons]
+  favicon = &#34;/path/to/icon&#34;
+  appleicon = &#34;/path/to/apple/icon&#34;
+  logo = &#34;/path/to/logo&#34;
+  banner = &#34;/path/to/banner&#34;</code></pre></div>
+<h3 id="add-custom-css-or-js-to-individual-pages">Add custom CSS or JS to individual pages</h3>
+
+<p>In Capsule, it is possible to add page-specific JS and CSS. It&rsquo;s more of a
+hack, so bear that in mind if you use it.</p>
+
+<p>In the front matter of each page (toml), add:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">css = &#34;&#34;&#34;
+&lt;style&gt;
+ ...
+&lt;/style&gt;
+&#34;&#34;&#34;
+
+js = &#34;&#34;&#34;
+&lt;script&gt;
+ ...
+&lt;/script&gt;
+&#34;&#34;&#34;</code></pre></div>
+<p>Any content inside the style or script tags in place of the ellipsis will be
+rendered or run, respectively.</p>
+
+<h3 id="enable-google-analytics">Enable Google Analytics</h3>
+
+<p>If you want to enable Google Analytics and have a tracking ID, add the
+following to your config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[params]
+  googleAnalytics = &#34;&lt;Analytics ID&gt;&#34;</code></pre></div>
+<p>Capsule is set up so that the Analytics JS is executed on live sites, not local
+(localhost) versions. Of course, this means that the site is no longer running
+CSS-only.</p>
+
+<h3 id="enable-sharing-links">Enable sharing links</h3>
+
+<p>If you want to add a bar at the bottom of pages with a &lsquo;single&rsquo; layout that
+contains links to share the page with various social media sites and messaging
+platforms, add the following to the config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[params]
+  share = true</code></pre></div>
+<p>Leave the variable unset or set to false to disable this.</p>
+
+<h3 id="set-the-search-engine">Set the search engine</h3>
+
+<p>Due to the nature of static sites, it is difficult to have an effective website
+search. A simple workaround is to send queries to a standard search engine
+(DuckDuckGo, Google, Bing, etc.) and limit results to those with your site URL.</p>
+
+<p>By default, Capsule will use DuckDuckGo, but should you want to enter another,
+add to the config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[params]
+  searchURL = &#34;&lt;baseurl&gt;&#34;</code></pre></div>
+<p>For example, <code>searchURL = &quot;https://google.com&quot;</code>.</p>
+
+<h3 id="adjust-related-list-content">Adjust &lsquo;Related List&rsquo; content</h3>
+
+<p>At the bottom of the page, Capsule will render a table of &ldquo;Related&rdquo; pages that
+each has at least one tag that intersect with the set of tags on the current
+page. By default, the list will only contain older pages that were published
+<strong>before</strong> the current page, but if you want to include pages published
+afterwards as well, set in the config.toml:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[params]
+  related = &#34;all&#34;</code></pre></div>
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/overview">
+      <span class="tag">Overview</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/install">
+      <span class="tag">Install</span>
+    </a>
+  </div>
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/layout">
+      <span class="tag">Layout</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="#" disabled>
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span>Newest</span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/post/01/">
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-tablet">
+              Hosting on GitLab Pages
+            </span>
+            
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f&text=Installation%20and%20Overview">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f&title=Installation%20and%20Overview">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f&title=Installation%20and%20Overview">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f&title=Installation%20and%20Overview&caption=">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f&description=Installation%20and%20Overview">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2finstall-overview%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

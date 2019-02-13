@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/</link>
+    <description>Recent content on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Sat, 01 Jul 2017 10:58:38 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation and Overview</title>
+      <link>https://alexniver.github.io/blog/tutorials/install-overview/</link>
+      <pubDate>Sat, 01 Jul 2017 10:58:38 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/install-overview/</guid>
+      <description>Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework and Font-Awesome icons.
+Installation To install Capsule, you can add it as a submodule in the themes/ directory, or you copy the files manually.
+If you use Git to version your site, you can easily add Capsule as a submodule. From the base of your website repository, run:
+git submodule add https://github.com/sudorook/capsule themes/capsule If you would instead prefer to manually install the theme, copy over the contents of the static/ directory to your site.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitLab Pages</title>
+      <link>https://alexniver.github.io/blog/post/01/</link>
+      <pubDate>Thu, 22 Feb 2018 18:00:28 -0800</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/post/01/</guid>
+      <description>Hugo sites can be hosted for free on GitLab. To add a theme to a site, you could always copy over the files into the themes/ directory and add them directly into the git tree, but using git submodules are easier for pulling theme updates.
+Unfortunately, building with submodules is a bit tricky with GitLab&amp;rsquo;s CI system. The following instructions will allow you to use the capsule theme as a submodule when building the site.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitLab Pages</title>
+      <link>https://alexniver.github.io/blog/post/02/</link>
+      <pubDate>Thu, 22 Feb 2018 18:00:28 -0800</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/post/02/</guid>
+      <description>中文 sites can be hosted for free on GitLab. To add a theme to a site, you could always copy over the files into the themes/ directory and add them directly into the git tree, but using git submodules are easier for pulling theme updates.
+Unfortunately, building with submodules is a bit tricky with GitLab&amp;rsquo;s CI system. The following instructions will allow you to use the capsule theme as a submodule when building the site.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitLab Pages</title>
+      <link>https://alexniver.github.io/blog/tutorials/hosting-gitlab-pages/</link>
+      <pubDate>Thu, 22 Feb 2018 18:00:28 -0800</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/hosting-gitlab-pages/</guid>
+      <description>Hugo sites can be hosted for free on GitLab. To add a theme to a site, you could always copy over the files into the themes/ directory and add them directly into the git tree, but using git submodules are easier for pulling theme updates.
+Unfortunately, building with submodules is a bit tricky with GitLab&amp;rsquo;s CI system. The following instructions will allow you to use the capsule theme as a submodule when building the site.</description>
+    </item>
+    
+    <item>
+      <title>Figures</title>
+      <link>https://alexniver.github.io/blog/tutorials/figures/</link>
+      <pubDate>Mon, 31 Jul 2017 12:50:20 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/figures/</guid>
+      <description>Capsule provides three shortcodes for embedding images, responsive images, and groups of images with relevant metadata.
+img The {{&amp;lt; img &amp;gt;}} shortcode simply adds an img tag with the following parameters:
+ align: aligns the image and wrap text around (&amp;lsquo;right&amp;rsquo; or &amp;lsquo;left&amp;rsquo;) alt (or caption): set the alt text for the image class: adds CSS classes to the img tag link: wraps the img in anchor tags so that the image has a clickable link.</description>
+    </item>
+    
+    <item>
+      <title>Blockquotes</title>
+      <link>https://alexniver.github.io/blog/tutorials/blockquotes/</link>
+      <pubDate>Sun, 30 Jul 2017 22:15:49 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/blockquotes/</guid>
+      <description>Use the {{&amp;lt; blockquote &amp;gt;}} shortcode to highlight blocks of text and also add metadata.
+Parameters:
+ author: source author, appears as the title in the blockquote footer source: book, context, etc. where the text is derived, appearing as a subtitle below the author in the footer date: also appears as subtitle in the footer  Note    You can specify whether the content inside the notification is rendered as plain HTML or Markdown by using {{}} or {{% %}}, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Banners</title>
+      <link>https://alexniver.github.io/blog/tutorials/banners/</link>
+      <pubDate>Sun, 30 Jul 2017 22:13:57 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/banners/</guid>
+      <description>The {{&amp;lt; banner &amp;gt;}} and {{&amp;lt; banner-fluid &amp;gt;}} shortcodes use the Bulma hero class to display banners that can either fill the entire container width or the entire viewport width, respectively.
+Parameters:
+ title: the text to be displayed prominently in the center of the banner class: string of classes to add to banner subtitle: smaller text displayed under the title img: url to background image mode: how the image is used to fill the banner space (&amp;lsquo;stretch&amp;rsquo; or &amp;lsquo;repeat&amp;rsquo;)  Text to display in the body of the banner goes in between the {{&amp;lt; banner &amp;gt;}} tags.</description>
+    </item>
+    
+    <item>
+      <title>Messages</title>
+      <link>https://alexniver.github.io/blog/tutorials/messages/</link>
+      <pubDate>Sun, 30 Jul 2017 11:37:28 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/messages/</guid>
+      <description>The message shortcode is a simple wrapper for the Bulma message class. The syntax is:
+{{&amp;lt; message class=&amp;#34;&amp;lt;class&amp;gt;&amp;#34; title=&amp;#34;&amp;lt;title&amp;gt;&amp;#34; &amp;gt;}} content {{&amp;lt; /message &amp;gt;}}  your title   your content   Replace &amp;lt;title&amp;gt; with the title of the message and &amp;lt;class&amp;gt; with a Bulma class. The class markup is taken directly from the names of the Bulma classes:
+ is-dark is-primary is-info is-success is-danger is-warning  If no class is specified, the message will default to something similar to the dark version.</description>
+    </item>
+    
+    <item>
+      <title>Notifications</title>
+      <link>https://alexniver.github.io/blog/tutorials/notifications/</link>
+      <pubDate>Sat, 29 Jul 2017 11:09:28 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/notifications/</guid>
+      <description>This shortcode wraps text within a Bulma notification class. They will occupy the container width.
+Given that no JS is included, notifications cannot be dismissed unless you add your own custom functions. These only really function to highlight text.
+To use, follow this syntax:
+{{&amp;lt; notification &amp;lt;class&amp;gt; &amp;gt;}} notification content {{&amp;lt; /notification &amp;gt;}} The available classes correspond to the class names available in Bulma:
+ is-dark is-primary is-info is-success is-warning is-danger  Note    You can specify whether the content inside the notification is rendered as plain HTML or Markdown by using {{}} or {{% %}}, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Built-in Shortcodes</title>
+      <link>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</link>
+      <pubDate>Mon, 08 May 2017 13:43:01 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</guid>
+      <description>&lt;p&gt;Hugo comes with several built-in shortcodes. Some examples of them are
+displayed below. For a full list of available shortcodes, go to &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;the Hugo
+website&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://alexniver.github.io/blog/tutorials/syntax-highlighting/</link>
+      <pubDate>Wed, 08 Feb 2017 16:40:02 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/syntax-highlighting/</guid>
+      <description>Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in config.toml:
+pygmentsstyle = &amp;#34;&amp;lt;style&amp;gt;&amp;#34; For dark highlighter themes, you should rebuild capsule CSS with build/extra/syntax.sass. Uncomment it from the capsule.sass file and run gulp.
+Without that file, the background color will default to Bulma&amp;rsquo;s light background-color, and light colored elements meant to be displayed against dark backgrounds from dark themes will be hard to read.
+Use ``` braces to add code blocks.</description>
+    </item>
+    
+  </channel>
+</rss>

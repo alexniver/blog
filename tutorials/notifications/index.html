@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Notifications</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="Add Bulma-style notifications to the text."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Notifications"/>
+  <meta itemprop="description"
+        content="Add Bulma-style notifications to the text."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Notifications"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/notifications/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="Add Bulma-style notifications to the text."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-07-29T11:09:28-04:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="text"/>
+  <meta property="article:tag" content="bulma"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Notifications"/>
+  <meta name="twitter:description"
+        content="Add Bulma-style notifications to the text."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Notifications</p>
+        <p class="subtitle">Jul 29, 2017</p>
+
+        
+
+        
+        <div class="content">
+          
+
+<p>This shortcode wraps text within a Bulma notification class. They will occupy
+the container width.</p>
+
+<p>Given that no JS is included, notifications cannot be dismissed unless you add
+your own custom functions. These only really function to highlight text.</p>
+
+<p>To use, follow this syntax:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; notification &lt;class&gt; &gt;}}
+notification content
+{{&lt; /notification &gt;}}</code></pre></div>
+<p>The available classes correspond to the class names available in Bulma:</p>
+
+<ol>
+<li><code>is-dark</code></li>
+<li><code>is-primary</code></li>
+<li><code>is-info</code></li>
+<li><code>is-success</code></li>
+<li><code>is-warning</code></li>
+<li><code>is-danger</code></li>
+</ol>
+
+
+
+<div class="message is-info">
+  <div class="message-header">
+    Note
+    <span class="icon is-small">
+      <i class="fa fa-info-circle"></i>
+    </span>
+  </div>
+  <div class="message-body">
+    
+You can specify whether the content inside the notification is rendered as
+plain HTML or Markdown by using {{< >}} or {{% %}}, respectively.
+
+  </div>
+</div>
+
+
+<hr>
+
+<h2 id="examples">Examples</h2>
+
+<div class="notification ">
+  
+default
+
+</div>
+
+
+<div class="notification is-dark">
+  
+is-dark
+
+</div>
+
+
+<div class="notification is-primary">
+  
+is-primary
+
+</div>
+
+
+<div class="notification is-info">
+  
+is-info
+
+</div>
+
+
+<div class="notification is-success">
+  
+is-success
+
+</div>
+
+
+<div class="notification is-warning">
+  
+is-warning
+
+</div>
+
+
+<div class="notification is-danger">
+  
+is-danger
+
+</div>
+
+
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/shortcodes">
+      <span class="tag">Shortcodes</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/text">
+      <span class="tag">Text</span>
+    </a>
+  </div>
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/bulma">
+      <span class="tag">Bulma</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/messages/">
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Messages
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Messages
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Messages
+            </span>
+            <span class="is-hidden-tablet">
+              Messages
+            </span>
+            
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/builtin-shortcodes/">
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Built-in Shortcodes
+            </span>
+            <span class="is-hidden-tablet">
+              Built-in Shortcodes
+            </span>
+            
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f&text=Notifications">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f&title=Notifications">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f&title=Notifications">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f&title=Notifications&caption=Add%20Bulma-style%20notifications%20to%20the%20text.">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f&description=Notifications">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fnotifications%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+<div class="container">
+  <nav class="panel">
+    <p class="panel-heading">Related</p>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/blockquotes/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Blockquotes&nbsp;
+      <div class="tag">Text</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/banners/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Banners&nbsp;
+      <div class="tag">Bulma</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/messages/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Messages&nbsp;
+      <div class="tag">Text</div>
+      <div class="tag">Bulma</div>
+      </span>
+    </a>
+  </nav>
+</div>
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

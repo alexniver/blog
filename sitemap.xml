@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/install-overview/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/post/01/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/post/02/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/hosting-gitlab-pages/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/figures/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/blockquotes/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/banners/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/messages/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/notifications/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/syntax-highlighting/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/bulma/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/code/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/images/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/install/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/layout/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/media/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/categories/overview/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/post/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/pygments/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/categories/shortcodes/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/categories/syntax/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tags/text/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/tutorials/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://alexniver.github.io/blog/</loc>
+    <lastmod>2019-02-13T23:08:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

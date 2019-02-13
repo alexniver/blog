@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Figures</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="Add figures and caption text via a shortcode."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Figures"/>
+  <meta itemprop="description"
+        content="Add figures and caption text via a shortcode."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Figures"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/figures/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="Add figures and caption text via a shortcode."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-07-31T12:50:20-04:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="images"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Figures"/>
+  <meta name="twitter:description"
+        content="Add figures and caption text via a shortcode."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Figures</p>
+        <p class="subtitle">Jul 31, 2017</p>
+
+        
+
+        
+        <div class="content">
+          
+
+<p>Capsule provides three shortcodes for embedding images, responsive images, and
+groups of images with relevant metadata.</p>
+
+<h2 id="img">img</h2>
+
+<p>The <code>{{&lt; img &gt;}}</code> shortcode simply adds an img tag with the following
+parameters:</p>
+
+<ul>
+<li>align: aligns the image and wrap text around (&lsquo;right&rsquo; or &lsquo;left&rsquo;)</li>
+<li>alt (or caption): set the alt text for the image</li>
+<li>class: adds CSS classes to the img tag</li>
+<li>link: wraps the img in anchor tags so that the image has a clickable link.
+(&lsquo;self&rsquo; or url)</li>
+<li>src: the url of the image to load</li>
+</ul>
+
+<p>If you want to center an image, use the <code>{{&lt; figure &gt;}}</code> shortcode instead.</p>
+
+<!-- If no values are given for height and width, Hugo will fill it in with the
+size of the source image. -->
+
+<h3 id="example-1">Example 1</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; img src=&#34;/img/logo.svg&#34; alt=&#34;alt text&#34; link=&#34;self&#34; &gt;}}</code></pre></div>
+<a href="https://alexniver.github.io/blog/img/logo.svg">
+  <img src="https://alexniver.github.io/blog/img/logo.svg"
+       alt="alt text" />
+</a>
+
+
+<h3 id="example-2">Example 2</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; img src=&#34;/img/logo-info.svg&#34; alt=&#34;alt text&#34; link=&#34;/&#34; align=&#34;right&#34; &gt;}}</code></pre></div>
+<a href="https://alexniver.github.io/blog/">
+  <img src="https://alexniver.github.io/blog/img/logo-info.svg"align="right" style="margin:0 0 0 .5rem"
+       alt="alt text" />
+</a>
+
+
+<p>In 1913 I had the happy idea to fasten a bicycle wheel to a kitchen stool and
+watch it turn.  A few months later I bought a cheap reproduction of a winter
+evening landscape, which I called &ldquo;Pharmacy&rdquo; after adding two small dots, one
+red and one yellow, in the horizon.  In New York in 1915 I bought at a hardware
+store a snow shovel on which I wrote &ldquo;In advance of the broken arm.&rdquo; It was
+around that time that the word &ldquo;Readymade&rdquo; came to my mind to designate this
+form of manifestation.  A point that I want very much to establish is that the
+choice of these &ldquo;Readymades&rdquo; was never dictated by aesthetic delectation.  The
+choice was based on a reaction of visual indifference with at the same time a
+total absence of good or bad taste &hellip; in fact a complete anaesthesia.  One
+important characteristic was the short sentence which I occasionally inscribed
+on the &ldquo;Readymade.&rdquo; That sentence instead of describing the object like a title
+was meant to carry the mind of the spectator towards other regions more verbal.
+Sometimes I would add a graphic detail of presentation which, in order to
+satisfy my craving for alliterations, would be called &ldquo;Readymade aided.&rdquo; At
+another time, wanting to expose the basic antinomy between art and
+&ldquo;Readymades,&rdquo; I imagined a &ldquo;Reciprocal Readymade&rdquo;: use a Rembrandt as an
+ironing board!  I realized very soon the danger of repeating indiscriminately
+this form of expression and decided to limit the production of &ldquo;Readymades&rdquo; to
+a small number yearly. I was aware at that time, that for the spectator even
+more for the artist, art is a habit forming drug and I wanted to protect my
+&ldquo;Readymades&rdquo; against such a contamination.  Another aspect of the &ldquo;Readymade&rdquo;
+is its lack of uniqueness&hellip; the replica of the &ldquo;Readymade&rdquo; delivering the same
+message, in fact nearly every one of the &ldquo;Readymades&rdquo; existing today is not an
+original in the conventional sense.  A final remark to this egomaniac&rsquo;s
+discourse: Since the tubes of paint used by an artist are manufactured and
+readymade products we must conclude that all the paintings in the world are
+&ldquo;Readymades aided&rdquo; and also works of assemblage.</p>
+
+<h3 id="example-3">Example 3</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; img src=&#34;/img/logo-success.svg&#34; alt=&#34;alt text&#34; link=&#34;/&#34; class=&#34;image is-256x256&#34; &gt;}}</code></pre></div>
+<a href="https://alexniver.github.io/blog/">
+  <img src="https://alexniver.github.io/blog/img/logo-success.svg" class="image is-256x256" 
+       alt="alt text" />
+</a>
+
+
+<h2 id="figure">figure</h2>
+
+<p>The <code>{{&lt; figure &gt;}}</code> shortcode overrides the default one build into Hugo.
+Use it for adding single images within a <code>&lt;figure&gt;</code> tag. Pass it:</p>
+
+<ul>
+<li>attr: author or external source to add to the caption</li>
+<li>attrlink: links the attr to a url</li>
+<li>caption (or subtitle): part of the figcaption</li>
+<li>class: adds CSS classes to the img tag</li>
+<li>link: wraps the img in anchor tags so that the image has a clickable link.
+(&lsquo;self&rsquo; or url)</li>
+<li>src: the url of the image to load</li>
+<li>title: part of the figcaption</li>
+</ul>
+
+<h3 id="example-1-1">Example 1</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; figure src=&#34;/img/logo.svg&#34; link=&#34;self&#34; title=&#34;Title&#34; caption=&#34;Subtitle&#34;
+           attr=&#34;Attr. Link&#34; attrlink=&#34;/&#34; &gt;}}</code></pre></div>
+<figure ><a href="https://alexniver.github.io/blog/img/logo.svg">
+  <img src="https://alexniver.github.io/blog/img/logo.svg"
+       alt="Subtitle" /></a>
+  <figcaption>
+    <p class="title is-4">Title</p>
+    <p class="subtitle is-6">Subtitle,<a href="https://alexniver.github.io/blog/"> Attr Link</a>
+    </p>
+  </figcaption>
+  
+</figure>
+    
+
+
+<h2 id="figure-group">figure-group</h2>
+
+<p>The <code>{{&lt; figure-group &gt;}}</code> nests img or figure tags inside another figure
+tag. Parameters:</p>
+
+<ul>
+<li>attr: author or external source to add to the caption</li>
+<li>attrlink: links the attr to a url</li>
+<li>caption (or subtitle): part of the figcaption for the wrapper figure</li>
+<li>class: adds CSS classes to the img tag</li>
+<li>title: part of the figcaption for the wrapper figure</li>
+</ul>
+
+<p>To use it, embed <code>{{&lt; figure &gt;}}</code> or <code>{{&lt; img &gt;}}</code> shortcodes inside.</p>
+
+<h3 id="example-1-2">Example 1</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; figure-group &gt;}}
+{{&lt; figure src=&#34;/img/logo.svg&#34; title=&#34;Title 1&#34; subtitle=&#34;Subtitle 1&#34; &gt;}}
+{{&lt; figure src=&#34;/img/logo-info.svg&#34; title=&#34;Title 2&#34; subtitle=&#34;Subtitle 2&#34; &gt;}}
+{{&lt; /figure-group &gt;}}</code></pre></div>
+<figure role="group" >
+   
+<figure >
+  <img src="https://alexniver.github.io/blog/img/logo.svg" />
+  <figcaption>
+    <p class="title is-4">Title 1</p>
+    <p class="subtitle is-6">Subtitle 1
+    </p>
+  </figcaption>
+  
+</figure>
+    
+
+<figure >
+  <img src="https://alexniver.github.io/blog/img/logo-info.svg" />
+  <figcaption>
+    <p class="title is-4">Title 2</p>
+    <p class="subtitle is-6">Subtitle 2
+    </p>
+  </figcaption>
+  
+</figure>
+    
+
+
+</figure>
+
+
+<h3 id="example-2-1">Example 2</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; figure-group title=&#34;Title&#34; subtitle=&#34;Subtitle&#34; 
+      attr=&#34;Attr link&#34; attrlink=&#34;/&#34; &gt;}}
+{{&lt; img src=&#34;/img/logo.svg&#34; link=&#34;/&#34; alt=&#34;alt text&#34; &gt;}}
+{{&lt; img src=&#34;/img/logo-info.svg&#34; link=&#34;/tutorials&#34; alt=&#34;alt text&#34; &gt;}}
+{{&lt; img src=&#34;/img/logo-success.svg&#34; link=&#34;/tutorials/figures/&#34; alt=&#34;alt text&#34; &gt;}}
+{{&lt; img src=&#34;/img/logo-warning.svg&#34; alt=&#34;alt text&#34; &gt;}}
+{{&lt; img src=&#34;/img/logo-danger.svg&#34; alt=&#34;alt text&#34; &gt;}}
+{{&lt; /figure-group &gt;}}</code></pre></div>
+<figure role="group" >
+  
+<a href="https://alexniver.github.io/blog/">
+  <img src="https://alexniver.github.io/blog/img/logo.svg"
+       alt="alt text" />
+</a>
+
+<a href="https://alexniver.github.io/blog/tutorials">
+  <img src="https://alexniver.github.io/blog/img/logo-info.svg"
+       alt="alt text" />
+</a>
+
+<a href="https://alexniver.github.io/blog/tutorials/figures/">
+  <img src="https://alexniver.github.io/blog/img/logo-success.svg"
+       alt="alt text" />
+</a>
+
+
+  <img src="https://alexniver.github.io/blog/img/logo-warning.svg"
+       alt="alt text" />
+
+
+
+  <img src="https://alexniver.github.io/blog/img/logo-danger.svg"
+       alt="alt text" />
+
+
+
+  <figcaption>
+    <p class="title is-4">Title</p>
+    <p class="subtitle is-6">Subtitle,<a href="https://alexniver.github.io/blog/"> Attr link</a>
+    </p>
+  </figcaption>
+  
+</figure>
+
+
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/shortcodes">
+      <span class="tag">Shortcodes</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/images">
+      <span class="tag">Images</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/hosting-gitlab-pages/">
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Hosting on GitLab Pages
+            </span>
+            <span class="is-hidden-tablet">
+              Hosting on GitLab Pages
+            </span>
+            
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/blockquotes/">
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Blockquotes
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Blockquotes
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Blockquotes
+            </span>
+            <span class="is-hidden-tablet">
+              Blockquotes
+            </span>
+            
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f&text=Figures">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f&title=Figures">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f&title=Figures">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f&title=Figures&caption=Add%20figures%20and%20caption%20text%20via%20a%20shortcode.">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f&description=Figures">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2ffigures%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+<div class="container">
+  <nav class="panel">
+    <p class="panel-heading">Related</p>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/banners/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Banners&nbsp;
+      <div class="tag">Images</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/builtin-shortcodes/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Built-in Shortcodes&nbsp;
+      <div class="tag">Images</div>
+      </span>
+    </a>
+  </nav>
+</div>
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

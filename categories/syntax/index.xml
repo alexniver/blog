@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Syntax on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/categories/syntax/</link>
+    <description>Recent content in Syntax on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Wed, 08 Feb 2017 16:40:02 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://alexniver.github.io/blog/tutorials/syntax-highlighting/</link>
+      <pubDate>Wed, 08 Feb 2017 16:40:02 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/syntax-highlighting/</guid>
+      <description>Syntax highlighting works out-of-the-box via Hugo. Set the highlighter style in config.toml:
+pygmentsstyle = &amp;#34;&amp;lt;style&amp;gt;&amp;#34; For dark highlighter themes, you should rebuild capsule CSS with build/extra/syntax.sass. Uncomment it from the capsule.sass file and run gulp.
+Without that file, the background color will default to Bulma&amp;rsquo;s light background-color, and light colored elements meant to be displayed against dark backgrounds from dark themes will be hard to read.
+Use ``` braces to add code blocks.</description>
+    </item>
+    
+  </channel>
+</rss>

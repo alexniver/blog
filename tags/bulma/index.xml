@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bulma on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/tags/bulma/</link>
+    <description>Recent content in Bulma on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Sun, 30 Jul 2017 22:13:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/tags/bulma/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Banners</title>
+      <link>https://alexniver.github.io/blog/tutorials/banners/</link>
+      <pubDate>Sun, 30 Jul 2017 22:13:57 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/banners/</guid>
+      <description>The {{&amp;lt; banner &amp;gt;}} and {{&amp;lt; banner-fluid &amp;gt;}} shortcodes use the Bulma hero class to display banners that can either fill the entire container width or the entire viewport width, respectively.
+Parameters:
+ title: the text to be displayed prominently in the center of the banner class: string of classes to add to banner subtitle: smaller text displayed under the title img: url to background image mode: how the image is used to fill the banner space (&amp;lsquo;stretch&amp;rsquo; or &amp;lsquo;repeat&amp;rsquo;)  Text to display in the body of the banner goes in between the {{&amp;lt; banner &amp;gt;}} tags.</description>
+    </item>
+    
+    <item>
+      <title>Messages</title>
+      <link>https://alexniver.github.io/blog/tutorials/messages/</link>
+      <pubDate>Sun, 30 Jul 2017 11:37:28 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/messages/</guid>
+      <description>The message shortcode is a simple wrapper for the Bulma message class. The syntax is:
+{{&amp;lt; message class=&amp;#34;&amp;lt;class&amp;gt;&amp;#34; title=&amp;#34;&amp;lt;title&amp;gt;&amp;#34; &amp;gt;}} content {{&amp;lt; /message &amp;gt;}}  your title   your content   Replace &amp;lt;title&amp;gt; with the title of the message and &amp;lt;class&amp;gt; with a Bulma class. The class markup is taken directly from the names of the Bulma classes:
+ is-dark is-primary is-info is-success is-danger is-warning  If no class is specified, the message will default to something similar to the dark version.</description>
+    </item>
+    
+    <item>
+      <title>Notifications</title>
+      <link>https://alexniver.github.io/blog/tutorials/notifications/</link>
+      <pubDate>Sat, 29 Jul 2017 11:09:28 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/notifications/</guid>
+      <description>This shortcode wraps text within a Bulma notification class. They will occupy the container width.
+Given that no JS is included, notifications cannot be dismissed unless you add your own custom functions. These only really function to highlight text.
+To use, follow this syntax:
+{{&amp;lt; notification &amp;lt;class&amp;gt; &amp;gt;}} notification content {{&amp;lt; /notification &amp;gt;}} The available classes correspond to the class names available in Bulma:
+ is-dark is-primary is-info is-success is-warning is-danger  Note    You can specify whether the content inside the notification is rendered as plain HTML or Markdown by using {{}} or {{% %}}, respectively.</description>
+    </item>
+    
+  </channel>
+</rss>

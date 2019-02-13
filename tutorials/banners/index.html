@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Banners</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="Add banners and embed images in them."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Banners"/>
+  <meta itemprop="description"
+        content="Add banners and embed images in them."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Banners"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/banners/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="Add banners and embed images in them."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-07-30T22:13:57-04:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="images"/>
+  <meta property="article:tag" content="bulma"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Banners"/>
+  <meta name="twitter:description"
+        content="Add banners and embed images in them."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Banners</p>
+        <p class="subtitle">Jul 30, 2017</p>
+
+        
+
+        
+        <div class="content">
+          
+
+<p>The <code>{{&lt; banner &gt;}}</code> and <code>{{&lt; banner-fluid &gt;}}</code> shortcodes use the
+Bulma <code>hero</code> class to display banners that can either fill the entire container
+width or the entire viewport width, respectively.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>title: the text to be displayed prominently in the center of the banner</li>
+<li>class: string of classes to add to banner</li>
+<li>subtitle: smaller text displayed under the title</li>
+<li>img: url to background image</li>
+<li>mode: how the image is used to fill the banner space (&lsquo;stretch&rsquo; or &lsquo;repeat&rsquo;)</li>
+</ul>
+
+<p>Text to display in the body of the banner goes in between the <code>{{&lt; banner &gt;}}</code>
+tags.</p>
+
+
+
+<div class="message is-info">
+  <div class="message-header">
+    Note
+    <span class="icon is-small">
+      <i class="fa fa-info-circle"></i>
+    </span>
+  </div>
+  <div class="message-body">
+    
+You can specify whether the content inside the notification is rendered as
+plain HTML or Markdown by using {{< ... >}} or {{% ... %}}, respectively.
+
+  </div>
+</div>
+
+
+<p>The banners can be styled based on the available Bulma classes:</p>
+
+<ol>
+<li><code>is-dark</code></li>
+<li><code>is-primary</code></li>
+<li><code>is-info</code></li>
+<li><code>is-success</code></li>
+<li><code>is-warning</code></li>
+<li><code>is-danger</code></li>
+</ol>
+
+<p>Their sizes can also be modified by adding additional Bulma classes:</p>
+
+<ol>
+<li><code>is-medium</code></li>
+<li><code>is-large</code></li>
+<li><code>is-fullheight</code></li>
+</ol>
+
+<h2 id="example-1">Example 1</h2>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{% banner title=&#34;Banner with Text&#34;
+    class=&#34;is-dark&#34;
+    subtitle=&#34;Subtitle&#34; %}}
+How does one achieve eternal bliss? By saying dada. How does one become famous?  
+By saying dada. With a noble gesture and delicate propriety. Till one goes  
+crazy. Till one loses consciousness. How can one get rid of everything that  
+smacks of journalism, worms, everything nice and right, blinkered, moralistic,  
+europeanised, enervated? By saying dada. Dada is the world soul, dada is the  
+pawnshop. Dada is the world&#39;s best lily-milk soap. Dada Mr Rubiner, dada Mr  
+Korrodi. Dada Mr Anastasius Lilienstein. In plain language: the hospitality of  
+the Swiss is something to be profoundly appreciated. And in questions of  
+aesthetics the key is quality.  
+{{% /banner %}}</code></pre></div>
+<section class="hero is-dark">
+
+  <div class="hero-body"
+       style="background:url('https://alexniver.github.io/blog/') center;">
+    <div class="container has-text-centered">
+      <p class="title">Banner with Text</p>
+      <p class="subtitle">Subtitle</p>
+      <p><p>How does one achieve eternal bliss? By saying dada. How does one become famous?<br />
+By saying dada. With a noble gesture and delicate propriety. Till one goes<br />
+crazy. Till one loses consciousness. How can one get rid of everything that<br />
+smacks of journalism, worms, everything nice and right, blinkered, moralistic,<br />
+europeanised, enervated? By saying dada. Dada is the world soul, dada is the<br />
+pawnshop. Dada is the world&rsquo;s best lily-milk soap. Dada Mr Rubiner, dada Mr<br />
+Korrodi. Dada Mr Anastasius Lilienstein. In plain language: the hospitality of<br />
+the Swiss is something to be profoundly appreciated. And in questions of<br />
+aesthetics the key is quality.</p>
+</p>
+    </div>
+  </div>
+
+</section>
+
+<br>
+
+
+<h2 id="example-2">Example 2</h2>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; banner title=&#34;Banner with Background Image&#34;
+    class=&#34;is-medium&#34;
+    subtitle=&#34;Subtitle&#34;
+    img=&#34;/img/banner.svg&#34; mode=&#34;repeat&#34; &gt;}}
+{{&lt; /banner &gt;}}</code></pre></div>
+<section class="hero is-medium">
+
+  <div class="hero-body"
+       style="background:url('https://alexniver.github.io/blog//img/banner.svg') center;background-size: auto 100%;">
+    <div class="container has-text-centered">
+      <p class="title">Banner with Background Image</p>
+      <p class="subtitle">Subtitle</p>
+      <p>
+</p>
+    </div>
+  </div>
+
+</section>
+
+<br>
+
+
+<h2 id="example-3">Example 3</h2>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{% banner-fluid title=&#34;Fluid Banner&#34;
+    class=&#34;is-medium is-primary&#34;
+    subtitle=&#34;Subtitle&#34; %}}
+{{% /banner %}}</code></pre></div>
+    </div>
+  </div>
+
+</section>
+
+<section class="hero is-medium is-primary">
+
+  <div class="hero-body"
+       style="background:url('https://alexniver.github.io/blog/') center;">
+    <div class="container has-text-centered">
+      <p class="title">Fluid Banner</p>
+      <p class="subtitle">Subtitle</p>
+      
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="container">
+    <div class="content">
+
+
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/shortcodes">
+      <span class="tag">Shortcodes</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/images">
+      <span class="tag">Images</span>
+    </a>
+  </div>
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/bulma">
+      <span class="tag">Bulma</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/blockquotes/">
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Blockquotes
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Blockquotes
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Blockquotes
+            </span>
+            <span class="is-hidden-tablet">
+              Blockquotes
+            </span>
+            
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/messages/">
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Messages
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Messages
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Messages
+            </span>
+            <span class="is-hidden-tablet">
+              Messages
+            </span>
+            
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f&text=Banners">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f&title=Banners">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f&title=Banners">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f&title=Banners&caption=Add%20banners%20and%20embed%20images%20in%20them.">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f&description=Banners">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fbanners%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+<div class="container">
+  <nav class="panel">
+    <p class="panel-heading">Related</p>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/figures/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Figures&nbsp;
+      <div class="tag">Images</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/messages/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Messages&nbsp;
+      <div class="tag">Bulma</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/notifications/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Notifications&nbsp;
+      <div class="tag">Bulma</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/builtin-shortcodes/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Built-in Shortcodes&nbsp;
+      <div class="tag">Images</div>
+      </span>
+    </a>
+  </nav>
+</div>
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

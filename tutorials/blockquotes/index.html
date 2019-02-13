@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Blockquotes</title>
+  <meta name="author" content="alexniver" />
+  <meta name="description"
+        content="Embed quotes in blockquotes and add custom markup for author, date, etc."/>
+
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+  <meta itemprop="name" content="Blockquotes"/>
+  <meta itemprop="description"
+        content="Embed quotes in blockquotes and add custom markup for author, date, etc."/>
+  <meta itemprop="image"
+        content=""/>
+
+  
+  <meta property="og:title" content="Blockquotes"/>
+  <meta property="og:type"
+        content="article"/>
+  <meta property="og:url" content="https://alexniver.github.io/blog/tutorials/blockquotes/"/>
+  <meta property="og:image"
+        content=""/>
+  <meta property="og:description"
+        content="Embed quotes in blockquotes and add custom markup for author, date, etc."/>
+  <meta property="og:site_name" content="alexniver&#39;s blog"/>
+  <meta property="og:updated_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:published_time"
+        content="2017-07-30T22:15:49-04:00"/>
+  <meta property="article:modified_time"
+        content="2019-02-13T23:08:31&#43;08:00"/>
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="text"/>
+
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site"
+        content=""/>
+  <meta name="twitter:title" content="Blockquotes"/>
+  <meta name="twitter:description"
+        content="Embed quotes in blockquotes and add custom markup for author, date, etc."/>
+  <meta name="twitter:creator"
+        content=""/>
+  <meta name="twitter:image:src"
+        content=""/>
+
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="https://alexniver.github.io/blog/css/capsule.min.css"/>
+  
+  
+
+  
+  </head>
+
+
+  <body style="min-height:100vh;display:flex;flex-direction:column">
+
+    <nav class="navbar has-shadow is-white"
+     role="navigation" aria-label="main navigation">
+  <div class="container">
+
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://alexniver.github.io/blog/">
+        <div class="title is-4">&nbsp;alexniver&#39;s blog</div>
+      </a>
+
+      
+      <label class="button navbar-burger is-white" for="navbar-burger-state">
+        <span></span>                               
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    
+    <input type="checkbox" id="navbar-burger-state"/>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      <a href="https://alexniver.github.io/blog/post/"
+         class="navbar-item
+                ">Posts
+      </a>
+      <a href="https://alexniver.github.io/blog/tutorials/"
+         class="navbar-item
+                is-active">Tutorials
+      </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+    <section class="section" style="flex:1">
+
+      
+      <div class="container">
+        <p class="title">Blockquotes</p>
+        <p class="subtitle">Jul 30, 2017</p>
+
+        
+
+        
+        <div class="content">
+          <p>Use the <code>{{&lt; blockquote &gt;}}</code> shortcode to highlight blocks of text and also
+add metadata.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>author: source author, appears as the title in the blockquote footer</li>
+<li>source: book, context, etc. where the text is derived, appearing as a
+subtitle below the author in the footer</li>
+<li>date: also appears as subtitle in the footer</li>
+</ul>
+
+
+
+<div class="message is-info">
+  <div class="message-header">
+    Note
+    <span class="icon is-small">
+      <i class="fa fa-info-circle"></i>
+    </span>
+  </div>
+  <div class="message-body">
+    
+You can specify whether the content inside the notification is rendered as
+plain HTML or Markdown by using {{< >}} or {{% %}}, respectively.
+
+  </div>
+</div>
+
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{{&lt; blockquote date=&#34;27 March 1920&#34; author=&#34;Francis Picabia&#34; 
+    source=&#34;Manifeste cannibale dada&#34; &gt;}}
+You are all indicted; stand up! Stand up as you would for the Marseillaise or
+God Save the King....  
+Dada alone does not smell: it is nothing, nothing, nothing.  
+
+    It is like your hopes: nothing.  
+    like your paradise: nothing.  
+    like your idols: nothing.  
+    like your politicians: nothing.  
+    like your heroes: nothing.  
+    like your artists: nothing.  
+    like your religions: nothing.  
+
+Hiss, shout, kick my teeth in, so what? I shall still tell you that you are
+half-wits. In three months my friends and I will be selling you our pictures
+for a few francs.
+{{&lt; /blockquote &gt;}}</code></pre></div>
+<div class="content">
+  <blockquote>
+
+    <p><p>You are all indicted; stand up! Stand up as you would for the Marseillaise or
+God Save the King&hellip;.<br />
+Dada alone does not smell: it is nothing, nothing, nothing.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;It is like your hopes: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your paradise: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your idols: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your politicians: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your heroes: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your artists: nothing.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;like your religions: nothing.</p>
+
+<p>Hiss, shout, kick my teeth in, so what? I shall still tell you that you are
+half-wits. In three months my friends and I will be selling you our pictures
+for a few francs.</p>
+</p>
+    <footer class="is-flex">
+      <span class="title is-5">&mdash;&nbsp;</span>
+      <span>
+        <div class="title is-5">Francis Picabia</div>
+        <div class="subtitle is-6"><i>Manifeste Cannibale Dada</i>, 27 March 1920</div>
+      </span>
+    </footer>
+
+  </blockquote>
+</div>
+
+
+        </div>
+
+        
+<br>
+<p class="heading">
+  Last edited:
+  <a href="https://github.com/alexniver/blog/commit/c3909c6eb30f135d5ce2beb02486135ba288039d">
+    Feb 13, 2019
+  </a>
+</p>
+
+        
+<br>
+<div class="heading">Categories:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/categories/shortcodes">
+      <span class="tag">Shortcodes</span>
+    </a>
+  </div>
+</div>
+<div class="heading">Tags:</div>
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <a href="https://alexniver.github.io/blog/tags/text">
+      <span class="tag">Text</span>
+    </a>
+  </div>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      
+      <div class="container">
+  <div class="level">
+
+    <div class="level-left">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/figures/">
+            <span class="icon is-small"><i class="fa fa-chevron-left"></i></span>
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Figures
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Figures
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Figures
+            </span>
+            <span class="is-hidden-tablet">
+              Figures
+            </span>
+            
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <p class="control has-addons">
+          <a class="button" href="https://alexniver.github.io/blog/tutorials/banners/">
+            <span class="is-hidden-touch is-hidden-desktop-only">
+              Banners
+            </span>
+            <span class="is-hidden-touch is-hidden-widescreen">
+              Banners
+            </span>
+            <span class="is-hidden-mobile is-hidden-desktop">
+              Banners
+            </span>
+            <span class="is-hidden-tablet">
+              Banners
+            </span>
+            
+            <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <br>
+
+      
+      <div class="container">
+  <div class="is-flex">
+    <span>
+      <a class="button">Share</a>
+    </span>
+
+    &nbsp;
+
+    <span>
+      
+      <a class="button"
+         href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://twitter.com/intent/tweet?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f&text=Blockquotes">
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f">
+        <span class="icon"><i class="fa fa-hacker-news"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://reddit.com/submit?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f&title=Blockquotes">
+        <span class="icon"><i class="fa fa-reddit"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://plus.google.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f">
+        <span class="icon"><i class="fa fa-google-plus"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f&title=Blockquotes">
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f&title=Blockquotes&caption=Embed%20quotes%20in%20blockquotes%20and%20add%20custom%20markup%20for%20author%2c%20date%2c%20etc.">
+        <span class="icon"><i class="fa fa-tumblr"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://pinterest.com/pin/create/bookmarklet/?media=&url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f&description=Blockquotes">
+        <span class="icon"><i class="fa fa-pinterest"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="whatsapp://send?text=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f">
+        <span class="icon"><i class="fa fa-whatsapp"></i></span>
+      </a>
+
+      
+      <a class="button"
+         href="https://web.skype.com/share?url=https%3a%2f%2falexniver.github.io%2fblog%2ftutorials%2fblockquotes%2f">
+        <span class="icon"><i class="fa fa-skype"></i></span>
+      </a>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+    </span>
+  </div>
+</div>
+
+
+      <br>
+
+      
+      
+<div class="container">
+  <nav class="panel">
+    <p class="panel-heading">Related</p>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/messages/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Messages&nbsp;
+      <div class="tag">Text</div>
+      </span>
+    </a>
+    <a class="panel-block" href="https://alexniver.github.io/blog/tutorials/notifications/">
+      <span class="icon is-small"><i class="fa fa-chevron-right"></i></span>
+      <span>&nbsp;</span>
+      <span>Notifications&nbsp;
+      <div class="tag">Text</div>
+      </span>
+    </a>
+  </nav>
+</div>
+
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="level">
+
+      <div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/post/" class="heading">
+          <span class="header">Posts</span>
+        </a>
+      </div><div class="level-item has-text-centered">
+        <a href="https://alexniver.github.io/blog/tutorials/" class="heading">
+          <span class="header">Tutorials</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <nav class="level">
+
+      <div class="level-left has-text-centered">
+        <div class="level-item">
+          <form class="control has-icon has-icon-right" method="get"
+                action="https://duckduckgo.com">
+            <input class="input" type="text" name="q" maxlength="255"
+                   placeholder="Search">
+            <input class="input" type="hidden" name="sites" value="https://alexniver.github.io/blog">
+            <span class="icon is-small"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="level-right has-text-centered">
+        <div class="level-item">
+
+          <a class="button" href="https://alexniver.github.io/blog">
+            <span class="icon"><i class="fa fa-home"></i></span>
+          </a> &nbsp;
+
+          
+          <a class="button" href="https://github.com/alexniver">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a> &nbsp;
+          <a class="button" href="https://gitlab.com/alexniver">
+            <span class="icon"><i class="fa fa-gitlab"></i></span>
+          </a> &nbsp;
+
+          <a class="button" href="https://alexniver.github.io/blog/index.xml">
+            <span class="icon"><i class="fa fa-rss"></i></span>
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+  </body>
+
+</html>

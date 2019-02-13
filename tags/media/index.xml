@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/tags/media/</link>
+    <description>Recent content in Media on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Mon, 08 May 2017 13:43:01 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Built-in Shortcodes</title>
+      <link>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</link>
+      <pubDate>Mon, 08 May 2017 13:43:01 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/builtin-shortcodes/</guid>
+      <description>&lt;p&gt;Hugo comes with several built-in shortcodes. Some examples of them are
+displayed below. For a full list of available shortcodes, go to &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;the Hugo
+website&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

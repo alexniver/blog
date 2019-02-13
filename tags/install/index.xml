@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/tags/install/</link>
+    <description>Recent content in Install on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Sat, 01 Jul 2017 10:58:38 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation and Overview</title>
+      <link>https://alexniver.github.io/blog/tutorials/install-overview/</link>
+      <pubDate>Sat, 01 Jul 2017 10:58:38 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tutorials/install-overview/</guid>
+      <description>Capsule is a CSS-only theme for Hugo sites that uses the Bulma CSS framework and Font-Awesome icons.
+Installation To install Capsule, you can add it as a submodule in the themes/ directory, or you copy the files manually.
+If you use Git to version your site, you can easily add Capsule as a submodule. From the base of your website repository, run:
+git submodule add https://github.com/sudorook/capsule themes/capsule If you would instead prefer to manually install the theme, copy over the contents of the static/ directory to your site.</description>
+    </item>
+    
+  </channel>
+</rss>

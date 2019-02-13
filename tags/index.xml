@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on alexniver&#39;s blog</title>
+    <link>https://alexniver.github.io/blog/tags/</link>
+    <description>Recent content in Tags on alexniver&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>zhulin10541@gmail.com (alexniver)</managingEditor>
+    <webMaster>zhulin10541@gmail.com (alexniver)</webMaster>
+    <lastBuildDate>Sun, 30 Jul 2017 22:13:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexniver.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bulma</title>
+      <link>https://alexniver.github.io/blog/tags/bulma/</link>
+      <pubDate>Sun, 30 Jul 2017 22:13:57 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/bulma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://alexniver.github.io/blog/tags/code/</link>
+      <pubDate>Wed, 08 Feb 2017 16:40:02 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://alexniver.github.io/blog/tags/images/</link>
+      <pubDate>Mon, 31 Jul 2017 12:50:20 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://alexniver.github.io/blog/tags/install/</link>
+      <pubDate>Sat, 01 Jul 2017 10:58:38 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Layout</title>
+      <link>https://alexniver.github.io/blog/tags/layout/</link>
+      <pubDate>Sat, 01 Jul 2017 10:58:38 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/layout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media</title>
+      <link>https://alexniver.github.io/blog/tags/media/</link>
+      <pubDate>Mon, 08 May 2017 13:43:01 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/media/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pygments</title>
+      <link>https://alexniver.github.io/blog/tags/pygments/</link>
+      <pubDate>Wed, 08 Feb 2017 16:40:02 -0500</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/pygments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>https://alexniver.github.io/blog/tags/text/</link>
+      <pubDate>Sun, 30 Jul 2017 22:15:49 -0400</pubDate>
+      <author>zhulin10541@gmail.com (alexniver)</author>
+      <guid>https://alexniver.github.io/blog/tags/text/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
