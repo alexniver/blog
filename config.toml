@@ -1,8 +1,27 @@
-baseurl = "https://alexniver.github.io/blog/"
+baseURL = "https://alexniver.github.io/blog"
 languageCode = "en-us"
 title = "alexniver's blog"
-theme = "capsule"
-googleAnalytics = ""
-disqusShortname = ""
-
+description = "alexniver's blog"
 canonifyURLs = true
+
+theme = "capsule"
+editor = "vim"
+SectionPagesMenu = "main"
+enableRobotsTXT = true
+enableGitInfo = true
+pygmentsstyle = "tango"
+PygmentsCodeFences = true
+
+[author]
+  name = "alexniver"
+  email = "zhulin10541@gmail.com"
+
+[social]
+  github = "alexniver"
+  gitlab = "alexniver"
+
+[params]
+  repo = "https://github.com/alexniver/blog"
+  share = true
+  searchURL = "https://duckduckgo.com"
+  related = "all"
