@@ -5,3 +5,4 @@ theme = "capsule"
 googleAnalytics = ""
 disqusShortname = ""
 
+canonifyURLs = true
